@@ -12,7 +12,7 @@ $(function() {
   var owl = $('.owl-1').owlCarousel({
     center: true,
     items: 3,
-    loop: true,
+    // loop: true,
     margin: 0,
     smartSpeed: 500,
     mouseDrag: false,
