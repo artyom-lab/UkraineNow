@@ -1,0 +1,1416 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;600;700;800;900&family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700;900&family=Nunito:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap')
+
+$color-main: #003F66
+$color-black: #0D0D0D
+$color-white: #FFF
+$color-white-2: #F2F2F2
+$color-blue: #66C4FF
+$color-dark-blue: #001F33
+$color-light-blue: #E5F5FF
+$color-footer: #042D49
+$color-progress: #B2E2FF
+$color-gray: #8792A2
+$color-gray-2: #A6A6A6
+$color-red: #FF6CA8
+$color-orange: #FFA62B
+
+$transition: .3s
+
+* 
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+.roboto
+	font-family: 'Roboto', sans-serif
+
+.inter
+	font-family: 'Inter', sans-serif
+
+.nunito
+	font-family: 'Nunito', sans-serif
+
+.montserrat
+	font-family: 'Montserrat', sans-serif
+
+.lato
+	font-family: 'Lato', sans-serif
+
+.dm-sans
+	font-family: 'DM Sans', sans-serif
+
+.gray
+	color: #404040
+
+.gray-2
+	color: $color-gray
+
+.red
+	color: $color-red
+
+.blue
+	color: $color-dark-blue
+
+.orange
+	color: $color-orange
+
+.bg-blue
+	background: $color-light-blue
+
+.fw-300
+	font-weight: 300
+
+.fw-900
+	font-weight: 900
+
+.v-hidden
+	visibility: hidden
+
+body 
+	font-family: 'DM Sans', sans-serif
+	background: $color-white
+	color: $color-black
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+a 
+	text-decoration: none !important
+	transition: $transition
+	color: $color-main
+	&:hover 
+		color: initial
+		opacity: .7
+	&.white
+		color: $color-white-2
+		&:hover 
+			color: $color-white-2
+	&.black
+		color: $color-black
+		display: inline-block
+		&:hover 
+			color: $color-black
+	&.red
+		color: $color-red
+		display: inline-block
+		&:hover 
+			color: $color-red
+	&.gray
+		color: $color-gray
+		display: inline-block
+		&:hover 
+			color: $color-gray
+	&.blue
+		color: $color-blue
+		font-size: 14px
+		font-weight: 600
+		font-family: 'Nunito', sans-serif
+		&:hover 
+			color: $color-blue
+	&.read-more
+		color: #005E99
+		display: inline-block
+		text-decoration: underline !important
+		&:hover 
+			text-decoration: none !important
+			color: #005E99
+	&.learn-more
+		font-size: 20px
+		@media (max-width: 767.98px)
+			font-size: 14px
+	&.more-projects
+		font-size: 18px
+		font-weight: 500
+		color: $color-progress
+		@media (max-width: 575.98px)
+			font-size: 14px
+	&.back
+		color: $color-dark-blue
+		display: inline-block
+		&:hover 
+			color: $color-dark-blue
+			transform: translateX(-3px)
+
+@media (min-width: 1280px)
+	.container 
+		max-width: 1230px
+	.container-2
+		max-width: 1170px
+	.container-3
+		max-width: 1110px
+
+.row-4
+	margin-left: -4px
+	margin-right: -4px
+	> [class*='col']
+		padding-left: 4px
+		padding-right: 4px
+
+.row-8
+	margin-left: -8px
+	margin-right: -8px
+	> [class*='col']
+		padding-left: 8px
+		padding-right: 8px
+
+.row-10
+	margin-left: -10px
+	margin-right: -10px
+	> [class*='col']
+		padding-left: 10px
+		padding-right: 10px
+
+.row-12
+	margin-left: -12px
+	margin-right: -12px
+	> [class*='col']
+		padding-left: 12px
+		padding-right: 12px
+
+.row-20
+	@media (min-width: 1200px)
+		margin-left: -20px
+		margin-right: -20px
+		> [class*='col']
+			padding-left: 20px
+			padding-right: 20px
+
+.fz-0
+	font-size: 0px
+.fz-12
+	font-size: 12px
+.fz-14
+	font-size: 14px
+.fz-15
+	font-size: 15px
+.fz-18
+	font-size: 18px
+.fz-20
+	font-size: 20px
+	@media (max-width: 767.98px)
+		font-size: 18px
+.fz-24
+	font-size: 24px
+	@media (max-width: 767.98px)
+		font-size: 18px
+.fz-32
+	font-size: 32px
+	@media (max-width: 767.98px)
+		font-size: 28px
+
+.lh-1
+	line-height: 1
+.lh-12
+	line-height: 1.2
+.lh-13
+	line-height: 1.3
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5
+	font-family: 'Montserrat', sans-serif
+
+.h1, h1
+	font-weight: bold
+	font-size: 36px
+	line-height: 1.2
+	color: $color-dark-blue
+	@media (max-width: 767.98px)
+		font-size: 30px
+	@media (max-width: 575.98px)
+		font-size: 20px
+
+.h1 
+	font-size: 48px
+	@media (max-width: 767.98px)
+		font-size: 32px !important
+
+.h2, h2
+	font-weight: 600
+	font-size: 40px
+	line-height: 1
+	@media (max-width: 767.98px)
+		font-size: 28px
+	@media (max-width: 575.98px)
+		font-size: 16px
+
+.h3, h3
+	font-weight: bold
+	font-size: 32px
+	line-height: 1
+	@media (max-width: 767.98px)
+		font-size: 26px
+	@media (max-width: 575.98px)
+		font-size: 16px
+		img 
+			width: 12px
+
+.h3
+	font-size: 32px
+	color: $color-dark-blue
+	@media (max-width: 767.98px)
+		font-size: 26px
+	@media (max-width: 575.98px)
+		font-size: 24px
+
+.h4, h4
+	font-weight: 600
+	font-size: 24px
+	line-height: 1
+	@media (max-width: 767.98px)
+		font-size: 18px
+	@media (max-width: 575.98px)
+		font-size: 16px
+
+.h4
+	font-size: 24px
+	font-weight: 500
+	font-family: 'DM Sans', sans-serif
+	color: $color-dark-blue
+	@media (max-width: 767.98px)
+		font-size: 20px
+	@media (max-width: 575.98px)
+		font-size: 18px
+
+.h5, h5
+	font-weight: 500
+	font-size: 32px
+	font-family: 'DM Sans', sans-serif
+	@media (max-width: 767.98px)
+		font-size: 18px
+
+.title-help
+	font-weight: bold
+	font-size: 32px
+	color: $color-dark-blue
+	line-height: 1.3
+	@media (max-width: 767.98px)
+		font-size: 18px
+
+.title-content
+	line-height: 1.3
+	font-weight: 500
+	color: $color-main
+	@media (max-width: 767.98px)
+		font-size: 14px
+
+.link-logo
+	line-height: 1
+	font-weight: bold
+	font-size: 32px
+	img 
+		width: 32px
+	.powered
+		font-weight: normal
+		font-size: 24px
+	@media (max-width: 767.98px)
+		font-size: 20px
+		img 
+			width: 20px
+		.powered
+			font-size: 16px
+
+.header-top
+	background: $color-footer
+	text-transform: uppercase
+	color: $color-white
+	padding: 3px 0
+
+.language-link
+	color: $color-gray-2
+	font-weight: bold
+	@media (max-width: 575.98px)
+		font-size: 14px
+	&:hover, &.active
+		color: $color-white
+		opacity: 1
+
+.share-link
+	color: $color-white-2
+	font-size: 14px
+	position: relative
+	img	
+		position: absolute
+		top: 0
+		transition: $transition
+		right: -18px
+	&:hover
+		color: $color-white-2
+		img 
+			transform: translateX(3px)
+
+.header-bottom
+	position: relative
+	> .container
+		min-height: calc(100vh - 30px)
+		display: flex
+		flex-direction: column
+	> .container-landing
+		min-height: calc(100vh - 130px)
+		@media (max-width: 1199.98px)
+			min-height: auto
+
+.box-supported
+	display: block
+	padding: 20px 
+	background: $color-light-blue
+	border-radius: 10px
+	transition: $transition
+	color: $color-dark-blue
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
+	line-height: 1.2
+	&:hover
+		opacity: 1
+		box-shadow: none
+	&.dropdown-toggle
+		white-space: initial
+		&:after 
+			display: none
+	.form-row
+		flex-wrap: nowrap
+		.col
+			white-space: nowrap
+			text-overflow: ellipsis
+			overflow: hidden
+
+.dropdown-1
+	@media (max-width: 575.98px)
+		margin-left: -15px
+		margin-right: -15px
+	.dropdown-menu
+		margin-top: 0
+		width: 100%	
+		border-radius: 0 0 10px 10px
+		border: 0
+		padding: 0 20px 20px
+		background: $color-light-blue
+		position: absolute !important
+		transition: $transition
+		opacity: 0
+		pointer-events: none
+		display: block
+		top: 75% !important
+		left: auto !important
+		right: 50% !important
+		transform: translate(50%, 0) !important
+		&.show
+			opacity: 1
+			pointer-events: inherit
+			top: 90% !important
+			box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1)
+	&.show 
+		.dropdown-toggle
+			border-radius: 10px 10px 0 0 
+			box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1)
+
+.white-line
+	height: 2px
+	display: flex
+	width: 60%
+	background: $color-white
+	margin: 5px auto 15px
+	position: relative
+
+.cart-donation
+	background: $color-white
+	overflow: hidden
+	border-radius: 30px
+	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1)
+	padding: 40px 20px
+	color: $color-main
+	text-align: center
+	.title
+		font-size: 24px
+		line-height: 1
+	.name	
+		font-size: 24px
+		font-weight: bold
+	.date 
+		font-size: 16px
+		font-weight: 500
+	.index
+		font-size: 10px
+	&.cart-donation-2
+		@media (min-width: 1200px)
+			padding: 40px 38px
+
+.box-donuts
+	max-width: 380px
+	padding: 20px 0
+	display: flex
+	flex-direction: column
+	margin: 0 auto
+	text-align: center
+	@media (max-width: 575.98px)
+		padding: 10px 0
+	.form-control
+		width: 100%
+		background: $color-white
+		border: 0
+		border-bottom: 1px solid $color-progress
+		height: 60px
+		border-radius: 0
+		transition: $transition
+		font-size: 48px
+		text-align: center
+		font-weight: bold
+		color: $color-progress
+		padding: 4px 65px
+		&::-webkit-input-placeholder
+			color: $color-progress
+			font-weight: bold
+		&::-moz-placeholder
+			color: $color-progress
+			font-weight: bold
+		&:-ms-input-placeholder
+			color: $color-progress
+			font-weight: bold
+		&:focus
+			box-shadow: none
+
+.select-money
+	font-size: 14px
+	position: absolute
+	top: -10px
+	right: 0
+	text-transform: uppercase
+	border: 0	
+	cursor: pointer
+	padding: 3px 8px 3px 22px
+	background: $color-white url(../img/arrow.svg) no-repeat left 4px center/10px 8px
+	&:focus 
+		box-shadow: none
+
+input
+	&[type=checkbox], &[type=radio]
+		display: none
+
+.btn-donate
+	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.12))
+	background: $color-orange
+	border-radius: 100px
+	padding: 12px 32px
+	color: $color-white
+	font-size: 20px
+	transition: $transition
+	font-weight: bold
+	font-family: 'Montserrat', sans-serif
+	@media (max-width: 575.98px)
+		font-size: 18px !important
+	&:hover
+		opacity: .9
+		color: $color-white
+		filter: none
+	&:focus
+		box-shadow: none
+
+.btn-save
+	background: $color-main
+
+.btn-submit
+	padding: 12px 72px
+	@media (max-width: 575.98px)
+		width: 100%
+
+.btn-explore
+	font-size: 24px
+	font-weight: 500
+	font-family: 'DM Sans', sans-serif
+
+.btn-outline-orange
+	background: $color-white
+	color: $color-orange
+	border: 1px solid $color-orange
+	&:hover
+		color: $color-orange
+
+.box-info
+	margin-bottom: 12px
+	color: $color-main
+	img
+		@media (max-width: 575.98px) 
+			width: 30px
+	.number
+		font-size: 24px
+		font-weight: bold 
+		line-height: 1
+		@media (max-width: 575.98px)
+			font-size: 18px
+	.title
+		font-size: 16px
+		@media (max-width: 575.98px)
+			font-size: 12px
+
+.progress-box
+	font-family: 'Montserrat', sans-serif
+	.progress
+		height: 10px
+		background-color: #EDE7E3
+		border-radius: 100px
+	.progress-bar
+		border-radius: 100px
+		background-color: $color-progress
+	.progress-content
+		display: flex
+		font-weight: bold
+		@media (max-width: 575.98px)
+			font-size: 14px
+
+.progress-box-small
+	.progress
+		height: 8px
+		margin: 2px 0
+	.progress-content
+		font-size: 14px
+		@media (max-width: 575.98px)
+			font-size: 12px
+	.fz-12
+		font-size: 12px
+		@media (max-width: 575.98px)
+			font-size: 10px
+
+.scroll-to
+	width: 34px
+	height: 34px
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 30px
+	margin: 0 auto
+	transition: $transition
+	@media (max-width: 1199.98px)
+		display: none
+
+// ABOUT
+
+.box-gaz
+	img 
+		width: 200px
+	@media (min-width: 768px)
+		background: $color-white
+		overflow: hidden
+		border-radius: 20px
+		box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05)
+		img 
+			width: auto
+
+.box-food
+	text-align: center
+	img
+		border-radius: 20px
+
+.text-about
+	font-size: 18px
+	line-height: 1.3
+	@media (max-width: 767.98px) 
+		font-size: 14px
+
+.box-news
+	border-radius: 50px
+	overflow: hidden	
+
+.img-wrap 
+	overflow: hidden
+	transition: $transition
+	.bg-wrap
+		transition: $transition
+	@media (min-width: 1200px)
+		&:hover
+			.bg-wrap
+				transform: scale(1.05) 
+
+.bg-img
+	background-size: cover
+	background-position: center center
+	min-height: 324px
+	@media (max-width: 1199.98px) 
+		min-height: 260px
+	@media (max-width: 776.98px) 
+		min-height: 240px
+
+ul
+	padding-left: 30px 
+	li 
+		&::marker 
+			font-size: 16px
+
+.bg-about
+	padding: 40px 0 36px
+	background-image: url(../img/bg-about.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+
+.bg-img-blue, .bg-img-blue-2
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+
+.bg-img-blue
+	padding: 40px 0
+	background-image: url(../img/bg-blue.jpg)
+	@media (max-width: 767.98px)
+		padding: 28px 0
+
+.bg-img-blue-2
+	padding: 55px 0
+	background-image: url(../img/bg-blue.jpg)
+	@media (max-width: 767.98px)
+		padding: 20px 0
+
+.to-up 
+	position: fixed
+	bottom: 20px
+	right: 20px
+	width: 40px
+	height: 40px
+	transition: $transition
+	z-index: 22
+	display: none
+	cursor: pointer
+	@media (max-width: 1199.98px)
+		right: 10px
+		bottom: 15px
+	&:hover 
+		opacity: .8
+		transform: translateY(-5px)
+
+.cart-content
+	padding: 40px 20px
+	border-radius: 50px
+	color: $color-dark-blue
+	background-color: rgba(255, 255, 255, .8)
+	font-size: 20px
+	line-height: 1.4
+	@media (max-width: 767.98px)
+		font-size: 16px
+	@media (max-width: 575.98px)
+		font-size: 14px
+
+.cart-media
+	padding: 30px 
+	border-radius: 50px
+	color: #000
+	background-color: $color-white-2
+	display: flex
+	flex-direction: column
+	height: 100%
+	@media (max-width: 1199.98px)
+		padding: 25px
+
+.scroll-media
+	flex-wrap: nowrap
+	overflow: auto
+	&.row-20
+		@media (max-width: 575.98px)
+			margin-left: -15px
+			margin-right: -15px
+			> [class*='col']
+				padding-left: 15px
+				padding-right: 0
+				&:last-child
+					padding-right: 15px
+
+.footer 
+	padding: 40px 0
+	margin-top: auto
+	position: relative
+	z-index: 1
+	background-color: $color-footer
+	font-family: 'Montserrat', sans-serif
+	text-align: center
+	color: $color-white
+	@media (max-width: 575.98px)
+		padding: 32px 0
+	.footer-link
+		color: $color-white
+		display: inline-block
+		font-size: 20px
+		font-weight: 500
+		margin: 0 16px
+		@media (max-width: 767.98px)
+			margin: 0 0 4px
+			font-size: 12px
+		&:hover
+			color: $color-white
+	.footer-brand
+		color: $color-white
+		font-size: 20px
+		@media (max-width: 767.98px)
+			font-size: 16px
+		&:hover
+			color: $color-white
+		.title
+			font-size: 24px
+			font-weight: bold 
+			@media (max-width: 767.98px)
+				font-size: 16px
+			.point
+				color: $color-orange
+	.all-rights
+		font-weight: 300
+		@media (max-width: 767.98px)
+			font-size: 12px
+
+.social 
+	color: $color-white 
+	font-size: 28px
+	margin: 0 4px
+	display: inline-block
+	vertical-align: middle
+	&:hover
+		color: $color-orange
+		opacity: 1
+
+// PAYMENT
+
+.section-form
+	background-size: cover
+	background-position: center
+	position: relative
+	display: flex
+	flex-direction: column
+	overflow: auto
+	@media (min-width: 992px)
+		min-height: 100vh
+		background-image: url(../img/bg-modal.svg)
+	.section-left
+		padding: 48px 0 0
+		display: flex
+		flex-direction: column
+		@media (min-width: 992px)
+			width: 50%
+			min-height: 100vh
+			padding: 48px 0
+	.donation-title
+		font-size: 20px	
+		font-weight: 700
+		color: $color-dark-blue
+		@media (max-width: 575.98px)
+			font-size: 16px
+	.donation-price
+		font-weight: 500
+		font-size: 36px
+		color: $color-dark-blue
+	.patronbadge
+		font-size: 12px
+		font-family: 'Montserrat', sans-serif
+		color: $color-gray
+	.cart-donation
+		@media (min-width: 992px)
+			max-width: 340px
+	.dropdown-1
+		.dropdown-menu
+			background-image: linear-gradient(to bottom, #E5F5FF, #F3E1F9)
+		@media (max-width: 575.98px)
+			margin: 0
+
+.form-white
+	background: $color-white
+	padding: 48px 0
+	color: $color-gray-2
+	display: flex
+	flex-direction: column
+	min-height: calc(100vh - 72px)
+	@media (min-width: 992px)
+		width: 50%
+		min-height: 100vh
+		position: absolute
+		top: 0
+		right: 0
+	@media (max-width: 991.98px)
+		padding: 0 0 48px
+	.form-box
+		@media (min-width: 992px)
+			max-width: 440px
+
+.progress-form
+	.progress
+		height: 12px
+		background-color: $color-light-blue
+		border-radius: 100px
+	.progress-bar
+		border-radius: 100px
+		background-color: #FFD1EB
+	.progress-content
+		color: $color-dark-blue
+		font-weight: bold
+		@media (max-width: 575.98px)
+			font-size: 14px
+		.inactive
+			color: #D9D9D9
+			font-weight: normal
+
+.btn-paypal
+	filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.12))
+	background: $color-progress
+	border-radius: 100px
+	padding: 12px
+	transition: $transition
+	&:hover
+		opacity: .9
+		filter: none
+	&:focus
+		box-shadow: none
+
+.border-gray
+	border-bottom: 1px solid #E8E8EB
+
+.or
+	position: relative
+	.orpay
+		position: absolute
+		display: inline-block
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		background: $color-white
+		padding: 4px
+
+.form-payment
+	.form-group
+		margin-bottom: 20px
+	.contacts-label
+		font-size: 14px
+		font-weight: 500
+	.form-control
+		height: 40px
+		font-size: 16px
+		border-radius: 8px
+		color: $color-gray-2
+		border: 1px solid $color-white-2
+		background: $color-white
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.04)
+		&::-webkit-input-placeholder
+			color: $color-gray-2
+		&::-moz-placeholder
+			color: $color-gray-2
+		&:-ms-input-placeholder
+			color: $color-gray-2
+		&:focus
+			box-shadow: none
+	.group-combined
+		.control-card
+			border-radius: 8px 8px 0 0
+			border-bottom: 0
+			padding-right: 140px
+		.control-date
+			border-radius: 0 0 0 8px
+			border-right: 0
+		.control-cvc
+			border-radius: 0 0 8px 0
+			padding-right: 50px
+
+.textarea-group
+	.contacts-label
+		font-size: 16px
+		@media (max-width: 1199.98px)
+			font-size: 14px
+	.form-textarea
+		min-height: 132px !important
+		resize: none
+		line-height: 1.2
+		overflow: auto
+		padding: 12px
+		background: $color-white
+		font-size: 14px
+		color: $color-dark-blue
+		border: 1px solid $color-white-2
+		border-radius: 8px
+		@media (max-width: 1199.98px)
+			font-size: 12px
+		&:focus
+			box-shadow: none
+
+.cards-box
+	position: absolute
+	right: 12px
+	top: 50%
+	transform: translateY(-50%)
+
+.copy
+	font-weight: bold
+	font-family: 'Montserrat', sans-serif
+	margin-right: 16px
+	@media (max-width: 1199.98px)
+		font-size: 14px
+
+.popover
+	.popover-header
+		background: #FFF
+		font-size: 12px
+		color: $color-dark-blue
+	.popover-body
+		display: none
+
+.share-box
+	border-top: 1px solid $color-white-2
+	border-bottom: 1px solid $color-white-2
+	padding: 24px 0 32px
+	.title
+		font-family: 'Montserrat', sans-serif
+		font-weight: bold
+		text-align: center
+		color: $color-dark-blue
+	a 
+		color: $color-orange 
+		font-size: 22px
+		&:hover
+			color: $color-main
+			opacity: 1
+
+.link-group
+	position: relative
+	z-index: 1
+	.contacts-label
+		font-size: 10px
+		display: inline-block
+		position: absolute
+		left: 16px
+		top: -8px
+		background: $color-white
+		z-index: 2
+	.form-control
+		height: 48px
+		font-size: 14px
+		border-radius: 8px
+		color: $color-dark-blue
+		border: 1px solid $color-white-2
+		background: $color-white
+		font-weight: 500
+		@media (max-width: 1199.98px)
+			font-size: 12px
+		&::-webkit-input-placeholder
+			color: $color-dark-blue
+		&::-moz-placeholder
+			color: $color-dark-blue
+		&:-ms-input-placeholder
+			color: $color-dark-blue
+		&:focus
+			box-shadow: none
+
+.section-gray
+	padding: 20px 15px
+	background: $color-white-2
+	border-radius: 8px
+	color: $color-dark-blue
+	@media (max-width: 1199.98px)
+		font-size: 14px
+
+// SLIDER
+
+.owl-box
+	margin: 56px auto 36px
+	padding-left: 50px
+	padding-right: 50px
+	overflow: hidden
+	@media (max-width: 767.98px)
+		margin: 18px auto
+	@media (max-width: 575.98px)
+		padding-left: 30px
+		padding-right: 30px
+
+.owl-1
+	&.owl-theme
+		.owl-stage-outer
+			overflow: visible
+			padding: 10px 0 50px
+			.owl-item
+				.slide
+					padding: 15px 25px 12px
+					margin-left: -50px
+					margin-right: -50px
+					transition: $transition
+					img 
+						width: 150px
+						margin: 0 auto
+					@media (max-width: 575.98px)
+						padding: 15px 10px 12px
+						margin-left: -30px
+						margin-right: -30px
+						.fz-18
+							font-size: 13px !important
+						img 
+							width: 80px
+				&:not(.center)
+					@media (max-width: 1199.98px)
+						pointer-events: none
+					.slide
+						box-shadow: none
+						background: #F7F7F7
+						cursor: pointer
+						div 
+							transition: $transition
+							opacity: .5
+						&:hover
+							div 
+								opacity: 1
+				&:not(.active)
+					pointer-events: none
+					.slide
+						opacity: 0
+				&.center
+					z-index: 1
+					.slide
+						transform: translateY(40px)
+
+// LANDING PAGE
+
+.navbar
+	padding-top: 18px
+	padding-bottom: 18px
+	@media (max-width: 767.98px)
+		padding-top: 10px
+		padding-bottom: 10px
+	.navbar-brand
+		font-weight: bold 
+		font-size: 36px
+		color: $color-main
+		@media (max-width: 767.98px)
+			font-size: 24px
+		@media (max-width: 575.98px)
+			font-size: 18px
+		&:hover
+			color: $color-main
+	.container
+			padding-left: 48px
+			padding-right: 48px
+			@media (max-width: 991.98px)
+				padding-left: 15px
+				padding-right: 15px
+			@media (max-width: 575.98px)
+				padding-left: 0
+				padding-right: 0
+	.navbar-nav
+		.nav-item
+			@media (min-width: 992px)
+				margin: 0 29px
+			.nav-link
+				font-size: 24px
+				font-weight: 500
+				color: $color-main
+				@media (max-width: 991.98px)
+					font-size: 20px
+				@media (max-width: 575.98px)
+					font-size: 16px
+					padding: 16px 0
+					text-align: center
+					background: $color-dark-blue
+					color: $color-white
+					border-bottom: 1px solid $color-white
+
+.navbar-toggler
+	display: inline-block
+	cursor: pointer
+	transition: none
+	padding: 0
+	border: 0
+	&:hover 
+		opacity: .6
+	&:before, span, &:after
+		width: 26px
+		@media (max-width: 575.98px)
+			width: 18px
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 5px
+		@media (max-width: 575.98px)
+			margin-top: 3px
+	span, &:before, &:after
+		display: block
+		transition: $transition
+		transform-origin: right center
+		border-top: 2px solid $color-dark-blue
+		margin-left: auto
+
+.button-box
+	@media (max-width: 991.98px)
+		margin-top: 330px
+
+.banner-bg
+	position: absolute
+	max-width: initial
+	z-index: -1
+
+.banner-bg-1
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	@media (max-width: 991.98px)
+		display: none
+
+.banner-bg-2
+	right: 0
+	bottom: 252px
+	@media (min-width: 992px)
+		display: none
+
+.section-white
+	padding: 120px 0
+	color: $color-dark-blue
+	@media (max-width: 1199.98px)
+		padding: 42px 0
+
+.bg-img-card
+	background-size: cover
+	background-position: center center
+	height: auto
+	min-height: 140px
+	@media (min-width: 992px)
+		min-height: 220px
+
+.card-funding
+	background: $color-white
+	border-radius: 30px
+	overflow: hidden
+	display: flex
+	border: 1px solid $color-progress
+	flex-direction: column 
+	height: 100%
+	.card-content
+		padding: 20px 30px
+		display: flex
+		flex-direction: column
+		flex-grow: 1
+		@media (max-width: 767.98px)
+			padding: 12px 16px
+	.finding
+		font-weight: 600
+		font-size: 14px
+		color: $color-progress
+		font-family: 'Montserrat', sans-serif
+	.title
+		font-family: 'Montserrat', sans-serif
+		font-weight: 600
+		font-size: 16px
+		color: #16697A
+	.card-comment
+		color: $color-footer
+		font-size: 14px
+		line-height: 1.4
+	.img-wrap
+		@media (max-width: 767.98px)
+			margin: 16px 16px 0
+			border-radius: 10px
+
+.pill-proven
+	text-transform: uppercase
+	background: $color-orange
+	color: $color-white
+	display: inline-block
+	border-radius: 5px
+	padding: 2px 12px
+	font-size: 8px
+	font-weight: 600
+	font-family: 'Montserrat', sans-serif
+
+.bg-donate
+	padding: 80px 0
+	background-image: url(../img/bg-blue-2.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	@media (max-width: 767.98px)
+		padding: 50px 0
+	@media (max-width: 575.98px)
+		background-image: url(../img/bg-blue-2-small.jpg)
+
+.donate-content
+	font-size: 18px
+	color: $color-dark-blue
+	@media (max-width: 767.98px)
+		font-size: 16px
+	@media (max-width: 575.98px)
+		font-size: 14px
+		
+.tools-content
+	font-size: 20px
+	color: $color-dark-blue
+	@media (max-width: 767.98px)
+		font-size: 16px
+	@media (max-width: 575.98px)
+		font-size: 14px
+
+.tool-box
+	@media (min-width: 768px)
+		min-height: 112px
+	@media (min-width: 992px)
+		min-height: 161px
+	@media (min-width: 1200px)
+		min-height: 218px
+	.img-tool
+		@media (max-width: 1199.98px)
+			max-width: 180px
+		@media (max-width: 991.98px)
+			max-width: 125px
+
+.bg-FAQ
+	padding: 80px 0
+	background-image: url(../img/bg-blue.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	position: relative
+	overflow: hidden
+	@media (max-width: 767.98px)
+		padding: 40px 0
+	.ellipse
+		position: absolute
+		z-index: 1
+		@media (max-width: 1199.98px)
+			display: none
+		&.ellipse-1
+			top: 48px 
+			left: 112px
+		&.ellipse-2
+			top: 48px 
+			right: 63px
+		&.ellipse-3
+			top: 619px 
+			left: 0	
+		&.ellipse-4
+			top: 694px 
+			right: 0
+
+.accordion-FAQ
+	position: relative
+	z-index: 2
+	.card
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05)
+		border: 0
+		border-radius: 32px
+		@media (max-width: 767.98px)
+			border-radius: 16px
+		.card-header
+			display: flex
+			padding: 30px 32px
+			background: $color-white
+			border-radius: 32px
+			line-height: 1.2
+			border: 0
+			font-weight: bold
+			color: $color-black
+			font-size: 24px
+			min-height: 120px
+			@media (max-width: 767.98px)
+				padding: 16px 24px
+				font-size: 16px
+				border-radius: 16px
+				min-height: 75px
+				img
+					width: 32px
+		.card-body 
+			padding: 0 32px 30px
+			color: $color-black
+			@media (max-width: 767.98px)
+				padding: 0 24px 16px
+				font-size: 14px
+
+.form-contact
+	@media (min-width: 992px)
+		padding: 80px 0
+
+.email-box
+	background: $color-progress
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05)
+	border-radius: 30px
+	display: inline-block
+	padding: 20px
+	text-align: center
+	a 
+		color: $color-dark-blue
+
+.box-contact
+	padding: 20px
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05)
+	border-radius: 30px
+	.form-group
+		margin-bottom: 30px
+		.contacts-label
+			font-weight: bold
+		.form-control
+			height: 40px
+			font-size: 16px
+			transition: $transition
+			border-radius: 30px
+			color: $color-gray-2
+			padding: 8px 20px
+			border: 1px solid #F9F9F9
+			background: #F9F9F9
+			&::-webkit-input-placeholder
+				color: $color-gray-2
+			&::-moz-placeholder
+				color: $color-gray-2
+			&:-ms-input-placeholder
+				color: $color-gray-2
+			@media (max-width: 767.98px)
+				font-size: 14px
+			&:focus
+				box-shadow: none
+				background: $color-white-2
+		.form-textarea
+			resize: none
+			min-height: 144px
+			padding: 20px
+
+.bg-signup
+	padding: 16px 40px 180px
+	background-image: url(../img/bg-signup.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom center
+	margin-bottom: -5%
+	position: relative
+	z-index: 2
+	pointer-events: none
+	@media (max-width: 1199.98px)
+		background-image: url(../img/bg-blue.jpg)
+		margin-bottom: 0
+		padding: 16px 40px 50px
+	@media (max-width: 575.98px)
+		padding: 24px 8px
+
+.box-signup
+	pointer-events: initial
+	.title
+		font-size: 48px
+		font-weight: 500
+		color: $color-main
+		@media (max-width: 1199.98px)
+			font-size: 32px
+		@media (max-width: 767.98px)
+			font-size: 26px
+		@media (max-width: 575.98px)
+			font-size: 16px
+	.input-signup
+		height: 62px
+		font-size: 24px
+		transition: $transition
+		border-radius: 30px
+		color: $color-progress
+		padding: 18px 35px
+		border: 0
+		background: $color-white
+		&::-webkit-input-placeholder
+			color: $color-progress
+		&::-moz-placeholder
+			color: $color-progress
+		&:-ms-input-placeholder
+			color: $color-progress
+		@media (max-width: 991.98px)
+			font-size: 20px
+			height: 44px
+			padding: 8px 24px
+		@media (max-width: 575.98px)
+			font-size: 14px
+			height: 34px
+		&:focus
+			box-shadow: none
+	.btn-explore
+		@media (max-width: 991.98px)
+			font-size: 20px
+			padding: 6px 32px
+		@media (max-width: 575.98px)
+			font-size: 14px !important
+			padding: 5.5px 24px
