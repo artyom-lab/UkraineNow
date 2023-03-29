@@ -14,11 +14,10 @@ $(function() {
     items: 3,
     loop: true,
     margin: 0,
-    smartSpeed: 0,
+    smartSpeed: 500,
     mouseDrag: false,
     touchDrag: false,
     dots: false,
-    slideBy: 1,
   });
 
   windowResp();
@@ -31,17 +30,32 @@ $(function() {
       owlDrag();
   };
 
+  var waiting = 0;
   function owlDrag() {
-    jquerySwipeHandler.handleSwipe(".slide", [
+    jquerySwipeHandler.handleSwipe(".owl-box", [
       jquerySwipeHandler.SWIPE_LEFT, jquerySwipeHandler.SWIPE_RIGHT
     ], function (direction) {
-      console.log("swipe2: ", direction);
-      if (direction === 'SWIPE_LEFT')
-        owl.trigger('next.owl.carousel');
-      else if  (direction === 'SWIPE_RIGHT')
-        owl.trigger('prev.owl.carousel');
+
+      if (waiting === 0) {
+
+        waiting = 600;
+
+        console.log("swipe2: ", direction);
+        if (direction === 'SWIPE_LEFT')
+          owl.trigger('next.owl.carousel');
+        else if (direction === 'SWIPE_RIGHT')
+          owl.trigger('prev.owl.carousel');
+
+        setTimeout(function() {
+          waiting = 0;
+        }, 600);
+
+      };
+
     });
   };
+
+  delete window.owlDrag;
 
   $(document).on('click', '.owl-item', function() {
     owlIndex = $(this).index();
