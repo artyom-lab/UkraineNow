@@ -14,7 +14,7 @@ $(function() {
     items: 3,
     loop: true,
     margin: 0,
-    smartSpeed: 500,
+    smartSpeed: 0,
     mouseDrag: false,
     touchDrag: false,
     dots: false,

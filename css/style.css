@@ -801,11 +801,13 @@ ul {
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: auto; }
-  @media (min-width: 992px) {
-    .section-form {
-      min-height: 100vh;
-      background-image: url(../img/bg-modal.svg); } }
+  overflow: auto;
+  min-height: 100vh;
+  background-image: url(../img/bg-modal.svg); }
+  @media (max-width: 991.98px) {
+    .section-form:not(.section-thanks) {
+      min-height: auto;
+      background-image: none; } }
   .section-form .section-left {
     padding: 48px 0 0;
     display: flex;

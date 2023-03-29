@@ -771,9 +771,12 @@ ul
 	display: flex
 	flex-direction: column
 	overflow: auto
-	@media (min-width: 992px)
-		min-height: 100vh
-		background-image: url(../img/bg-modal.svg)
+	min-height: 100vh
+	background-image: url(../img/bg-modal.svg)
+	&:not(.section-thanks)
+		@media (max-width: 991.98px)
+			min-height: auto
+			background-image: none
 	.section-left
 		padding: 48px 0 0
 		display: flex
