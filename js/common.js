@@ -12,12 +12,13 @@ $(function() {
   var owl = $('.owl-1').owlCarousel({
     center: true,
     items: 3,
-    // loop: true,
+    loop: true,
     margin: 0,
     smartSpeed: 500,
     mouseDrag: false,
     touchDrag: false,
     dots: false,
+    slideBy: 1,
   });
 
   windowResp();
