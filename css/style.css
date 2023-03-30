@@ -473,6 +473,9 @@ a {
     font-weight: bold;
     color: #B2E2FF;
     padding: 4px 65px; }
+    @media (max-width: 575.98px) {
+      .box-donuts .form-control {
+        font-size: 44px; } }
     .box-donuts .form-control::-webkit-input-placeholder {
       color: #B2E2FF;
       font-weight: bold; }
