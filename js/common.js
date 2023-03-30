@@ -12,7 +12,7 @@ $(function() {
   var owl = $('.owl-1').owlCarousel({
     center: true,
     items: 3,
-    loop: true,
+    // loop: true,
     margin: 0,
     smartSpeed: 500,
     mouseDrag: false,
@@ -49,20 +49,16 @@ $(function() {
         setTimeout(function() {
           waiting = 0;
         }, 600);
-
       };
-
     });
   };
 
   delete window.owlDrag;
 
-  $(document).on('click', '.owl-item', function() {
-    owlIndex = $(this).index();
-    console.log('checking');
-    count = document.querySelectorAll(".owl-item.active").length;
-    $('.owl-stage-outer').trigger('to.owl.carousel', owlIndex - count);
-  });
+  $(document).on('click', '.owl-item', function(e) {
+  const carousel = $('.owl-carousel').data('owl.carousel');
+  carousel.to(carousel.relative($(this).index()), false, true);
+});
 
   var popupTimer;
   function delayPopup(popup) {
