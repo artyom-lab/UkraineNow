@@ -127,6 +127,10 @@ a {
 
   .container-3 {
     max-width: 1110px; } }
+@media (min-width: 1280px) and (min-width: 1530px) {
+  .container-big {
+    max-width: 1400px; } }
+
 .row-4 {
   margin-left: -4px;
   margin-right: -4px; }
@@ -1112,17 +1116,6 @@ ul {
         font-size: 18px; } }
     .navbar .navbar-brand:hover {
       color: #003F66; }
-  .navbar .container {
-    padding-left: 48px;
-    padding-right: 48px; }
-    @media (max-width: 991.98px) {
-      .navbar .container {
-        padding-left: 15px;
-        padding-right: 15px; } }
-    @media (max-width: 575.98px) {
-      .navbar .container {
-        padding-left: 0;
-        padding-right: 0; } }
   @media (min-width: 992px) {
     .navbar .navbar-nav .nav-item {
       margin: 0 29px; } }
@@ -1169,29 +1162,20 @@ ul {
     border-top: 2px solid #001F33;
     margin-left: auto; }
 
-@media (max-width: 991.98px) {
-  .button-box {
-    margin-top: 330px; } }
-
 .banner-bg {
   position: absolute;
   max-width: initial;
-  z-index: -1; }
-
-.banner-bg-1 {
+  z-index: -1;
   right: 0;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  width: 50%; }
   @media (max-width: 991.98px) {
-    .banner-bg-1 {
-      display: none; } }
-
-.banner-bg-2 {
-  right: 0;
-  bottom: 252px; }
-  @media (min-width: 992px) {
-    .banner-bg-2 {
-      display: none; } }
+    .banner-bg {
+      width: 80%; } }
+  @media (max-width: 575.98px) {
+    .banner-bg {
+      width: 100%; } }
 
 .section-white {
   padding: 120px 0;
